@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/raw" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/GPUImage.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/GPUImageFilterTools.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/GPUImageNativeLibrary.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/GPUImageRenderer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/GPUImageView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/OpenGlUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/PixelBuffer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/Rotation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/TextureRotationUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImage3x3TextureSamplingFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageColorInvertFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageColorMatrixFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageFalseColorFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageFilterGroup.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageGaussianBlurFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageGrayscaleFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageKuwaharaFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageRenderer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageSepiaFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageSketchFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageSmoothToonFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageToneCurveFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageToonFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageTwoPassFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageTwoPassTextureSamplingFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/administrator/cropimageinside/filter/GPUImageVignetteFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/raw" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/raw" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

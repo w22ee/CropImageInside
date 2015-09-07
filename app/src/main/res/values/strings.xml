@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CropImageInside</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string-array name="filter_name_list">
+        <item ></item>
+    </string-array>
+</resources>
