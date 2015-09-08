@@ -19,12 +19,12 @@ import com.example.administrator.cropimageinside.filter.GPUImageVignetteFilter;
  */
 public class ImageFilterTools {
 
-    private enum FilterType {
+    public enum FilterType {
         GRAYSCALE, SEPIA, VIGNETTE, TONE_CURVE, SKETCH, SMOOTH_TOON, INVERT, FALSE_COLOR, KUWAHARA, PIXELATION,
     }
 
 
-    private static GPUImageFilter createFilterForType(final Context context, final FilterType type) {
+    public static GPUImageFilter createFilterForType(final Context context, final FilterType type) {
         switch (type) {
             case INVERT:
                 return new GPUImageColorInvertFilter();

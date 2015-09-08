@@ -13,18 +13,18 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.administrator.cropimageinside.filter.GPUImageColorInvertFilter;
 import com.example.administrator.cropimageinside.filter.GPUImageFilter;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class FilterActivity extends Activity {
     private GPUImageView mGPUImageView;
     private RecyclerView recyclerView;
+    private TextView textView;
 
     private GPUImageFilter mFilter;
-    private String[] names = { "lomo", "张柏芝", "张敏", "巩俐", "黄圣依", "赵薇", "莫文蔚", "如花" };
-    private HashMap<String,Enum> hashMap;
+    private ArrayList<Filter> list = new ArrayList<Filter>();
+    private Bitmap bitmap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,16 +34,44 @@ public class FilterActivity extends Activity {
         Intent intent = getIntent();
         if (intent.getAction().equals("new_file")) {
             String path = intent.getStringExtra("path");
-            Bitmap bitmap = BitmapFactory.decodeFile(path);
+             bitmap = BitmapFactory.decodeFile(path);
             mGPUImageView.setScaleType(GPUImage.ScaleType.CENTER_INSIDE);
             mGPUImageView.setImage(bitmap);
 
         }
+        initList();
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter( new RecyclerAdatper());
     }
+
+    private void initList(){
+        list.add(new Filter("NORMAL", null));
+        list.add(new Filter("GRAYSCALE", ImageFilterTools.FilterType.GRAYSCALE));
+        list.add(new Filter("SEPIA", ImageFilterTools.FilterType.SEPIA));
+        list.add(new Filter("VIGNETTE", ImageFilterTools.FilterType.VIGNETTE));
+        list.add(new Filter("TONE_CURVE", ImageFilterTools.FilterType.TONE_CURVE));
+        list.add(new Filter("SKETCH", ImageFilterTools.FilterType.SKETCH));
+        list.add(new Filter("SMOOTH_TOON", ImageFilterTools.FilterType.SMOOTH_TOON));
+        list.add(new Filter("INVERT", ImageFilterTools.FilterType.INVERT));
+        list.add(new Filter("FALSE_COLOR", ImageFilterTools.FilterType.FALSE_COLOR));
+        list.add(new Filter("KUWAHARA", ImageFilterTools.FilterType.KUWAHARA));
+    }
+
+
+    class Filter{
+        String name;
+        ImageFilterTools.FilterType type;
+
+        public Filter(String name, ImageFilterTools.FilterType type) {
+            this.name = name;
+            this.type = type;
+        }
+    }
+
+
 
 
     class RecyclerAdatper extends RecyclerView.Adapter<ViewHolder> {
@@ -55,22 +83,30 @@ public class FilterActivity extends Activity {
         }
 
         @Override
-        public void onBindViewHolder(ViewHolder viewHolder, int i) {
+        public void onBindViewHolder(ViewHolder viewHolder, final int i) {
 
-            viewHolder.mTextView.setText(names[i]);
+            final Filter filter = list.get(i);
+            viewHolder.mTextView.setText(filter.name);
             viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    GPUImageFilter imageFilter;
+                    if (i == 0){
+                         imageFilter = new GPUImageFilter();
 
-                    GPUImageColorInvertFilter colorInvertFilter = new GPUImageColorInvertFilter();
-                    switchFilterTo(colorInvertFilter);
+                    }else {
+                         imageFilter = ImageFilterTools.createFilterForType(FilterActivity.this,filter.type);
+                    }
+
+
+                    switchFilterTo(imageFilter);
                 }
             });
         }
 
         @Override
         public int getItemCount() {
-            return names.length;
+            return list.size();
         }
 
 
