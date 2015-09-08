@@ -6,7 +6,7 @@
  * http://www.anddev.org/android-2d-3d-graphics-opengl-tutorials-f2/possible-to-do-opengl-off-screen-rendering-in-android-t13232.html#p41662
  */
 
-package com.example.administrator.cropimageinside;
+package com.example.administrator.cropimageinside.gpuImageTools;
 
 import android.graphics.Bitmap;
 import android.opengl.GLSurfaceView;

@@ -19,8 +19,8 @@ package com.example.administrator.cropimageinside.filter;
 import android.annotation.SuppressLint;
 import android.opengl.GLES20;
 
-import com.example.administrator.cropimageinside.Rotation;
-import com.example.administrator.cropimageinside.TextureRotationUtil;
+import com.example.administrator.cropimageinside.gpuImageTools.Rotation;
+import com.example.administrator.cropimageinside.gpuImageTools.TextureRotationUtil;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -28,7 +28,7 @@ import java.nio.FloatBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.administrator.cropimageinside.TextureRotationUtil.TEXTURE_NO_ROTATION;
+import static com.example.administrator.cropimageinside.gpuImageTools.TextureRotationUtil.TEXTURE_NO_ROTATION;
 
 
 /**

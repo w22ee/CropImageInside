@@ -1,10 +1,12 @@
-package com.example.administrator.cropimageinside;
+package com.example.administrator.cropimageinside.gpuImageTools;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.RelativeLayout;
+
+import com.example.administrator.cropimageinside.R;
 
 
 public class ClipImageLayout extends RelativeLayout {

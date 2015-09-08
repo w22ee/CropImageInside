@@ -26,11 +26,11 @@ import android.hardware.Camera.Size;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView.Renderer;
 
-import com.example.administrator.cropimageinside.GPUImage;
-import com.example.administrator.cropimageinside.GPUImageNativeLibrary;
-import com.example.administrator.cropimageinside.OpenGlUtils;
-import com.example.administrator.cropimageinside.Rotation;
-import com.example.administrator.cropimageinside.TextureRotationUtil;
+import com.example.administrator.cropimageinside.gpuImageTools.GPUImage;
+import com.example.administrator.cropimageinside.gpuImageTools.GPUImageNativeLibrary;
+import com.example.administrator.cropimageinside.gpuImageTools.OpenGlUtils;
+import com.example.administrator.cropimageinside.gpuImageTools.Rotation;
+import com.example.administrator.cropimageinside.gpuImageTools.TextureRotationUtil;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -43,7 +43,7 @@ import java.util.Queue;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
-import static com.example.administrator.cropimageinside.TextureRotationUtil.TEXTURE_NO_ROTATION;
+import static com.example.administrator.cropimageinside.gpuImageTools.TextureRotationUtil.TEXTURE_NO_ROTATION;
 
 @TargetApi(11)
 public class GPUImageRenderer implements Renderer, PreviewCallback {

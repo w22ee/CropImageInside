@@ -21,7 +21,7 @@ import android.content.res.AssetManager;
 import android.graphics.PointF;
 import android.opengl.GLES20;
 
-import com.example.administrator.cropimageinside.OpenGlUtils;
+import com.example.administrator.cropimageinside.gpuImageTools.OpenGlUtils;
 
 import java.io.InputStream;
 import java.nio.FloatBuffer;

@@ -14,6 +14,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.administrator.cropimageinside.filter.GPUImageFilter;
+import com.example.administrator.cropimageinside.gpuImageTools.GPUImage;
+import com.example.administrator.cropimageinside.gpuImageTools.GPUImageView;
+import com.example.administrator.cropimageinside.gpuImageTools.ImageFilterTools;
 
 import java.util.ArrayList;
 

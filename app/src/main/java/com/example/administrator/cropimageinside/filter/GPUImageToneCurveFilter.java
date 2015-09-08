@@ -20,7 +20,7 @@ import android.graphics.Point;
 import android.graphics.PointF;
 import android.opengl.GLES20;
 
-import com.example.administrator.cropimageinside.OpenGlUtils;
+import com.example.administrator.cropimageinside.gpuImageTools.OpenGlUtils;
 
 import java.io.IOException;
 import java.io.InputStream;

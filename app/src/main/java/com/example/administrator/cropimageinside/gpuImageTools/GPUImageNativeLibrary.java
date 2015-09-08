@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.administrator.cropimageinside;
+package com.example.administrator.cropimageinside.gpuImageTools;
 
 public class GPUImageNativeLibrary {
     static {

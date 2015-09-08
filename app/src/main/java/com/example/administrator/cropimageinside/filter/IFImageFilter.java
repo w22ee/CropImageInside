@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.opengl.GLES20;
 
-import com.example.administrator.cropimageinside.OpenGlUtils;
+import com.example.administrator.cropimageinside.gpuImageTools.OpenGlUtils;
 
 import java.util.ArrayList;
 import java.util.List;

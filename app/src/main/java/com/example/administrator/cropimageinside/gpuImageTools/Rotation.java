@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.administrator.cropimageinside;
+package com.example.administrator.cropimageinside.gpuImageTools;
 
 public enum Rotation {
     NORMAL, ROTATION_90, ROTATION_180, ROTATION_270;

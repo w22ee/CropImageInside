@@ -1,8 +1,9 @@
-package com.example.administrator.cropimageinside;
+package com.example.administrator.cropimageinside.gpuImageTools;
 
 import android.content.Context;
 import android.graphics.PointF;
 
+import com.example.administrator.cropimageinside.R;
 import com.example.administrator.cropimageinside.filter.GPUImageColorInvertFilter;
 import com.example.administrator.cropimageinside.filter.GPUImageFalseColorFilter;
 import com.example.administrator.cropimageinside.filter.GPUImageFilter;

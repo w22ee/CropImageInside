@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.administrator.cropimageinside.FilterActivity">
 
-    <com.example.administrator.cropimageinside.GPUImageView
+    <com.example.administrator.cropimageinside.gpuImageTools.GPUImageView
         android:id="@+id/gpuimage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
